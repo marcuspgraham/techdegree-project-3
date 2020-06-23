@@ -60,6 +60,7 @@ label {
 
 .form1 {
     padding-top: 15px;
+    background-color: rgb(45, 57, 69);
 }
 
 .Contact {
@@ -80,6 +81,10 @@ label {
 
 /* ---- Page Elements ---- */
 
+fieldset {
+    border: 0;
+}
+
 .Newsletter > h2 {
     text-align: center;
 }
@@ -99,14 +104,10 @@ label {
 /* ---- Form Elements ---- */
 
 input[type="text"],
-input[type="phone"],
+input[type="tel"],
 input[type="email"],
 input[type="number"],
-input[type="street"],
-input[type="city"],
-input[type="area"],
-input[type="state"],
-input[type="zip"],
+input[type="search"],
 select,
 #other {
   background: rgba(255,255,255,0.1);
@@ -124,7 +125,7 @@ select,
   margin-bottom: 30px;
 }
 
-input[type="zip"] {
+#code  {
     display: block;
     width: 40%;
 }
@@ -139,7 +140,13 @@ label {
     margin-left: 10px;
 }
 
+.form-group label {
+    color: white;
+}
 
+.form1 {
+    border-radius: 5px;
+}
 
 
 /* ---- Button ---- */
@@ -168,13 +175,6 @@ input::placeholder {
     opacity: .5;
 }
 
-input[type="number"]::placeholder,
-input[type="zip"]::placeholder,
-input[type="city"]::placeholder,
-input[type="street"]::placeholder,
-input[type="phone"]::placeholder {
-    text-align: left;
-}
 
 input:focus, 
 select:focus,
@@ -185,6 +185,42 @@ select:focus,
 input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label{
     font-weight: bold;
+    font-size: large;
+}
+
+input:required:focus {
+border: 2px solid red;
+outline: none;
+}
+
+input:required:hover {
+opacity: 1;
+}
+
+/* Transisition ------------ */
+
+input#name, 
+input#mail,
+input#tel,
+input#address,
+input#place,
+input#state,
+input#code,
+input#other {
+opacity: 1;
+transition: opacity 1s ease-in-out;
+-moz-transition: opacity 2s ease-in-out;
+-webkit-transition: opacity 2s ease-in-out;
+}
+
+input#name, 
+input#mail,
+input#tel,
+input#address,
+input#place,
+input#state,
+input#code {
+opacity: 0.5;
 }
 
 
