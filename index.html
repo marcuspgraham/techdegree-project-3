@@ -58,7 +58,12 @@
                 </li>
                 <li class="form-group">
                     <label for="state">State</label>
-                    <input type="number" id="state" name="user_state" placeholder="Choose State">
+                        <select name="state" id="state">
+                            <option value="california">California</option>
+                            <option value="florida">Florida</option>
+                            <option value="washington">Washington</option>
+                            <option value="Nevada">Nevada</option>
+                        </select>
                 </li>
                 <li class="form-group">
                     <label for="code">Zip Code</label>
@@ -86,7 +91,7 @@
 
             <div class="checkboxes">
 
-            <input type="checkbox" id="HTML_NEWS" value="interest_HTML" name="user_interest"><label class="light" for="HTML">HTML News</label><br>
+            <input type="checkbox" id="HTML_NEWS" value="interest_HTML" name="user_interest"><label class="light" for="HTML_NEWS">HTML News</label><br>
             <input type="checkbox" id="CSS" value="interest_CSS" name="user_interest"><label class="light" for="CSS">CSS News</label><br>
             <input type="checkbox" id="Javascript" value="interest_Javascript" name="user_interest"><label class="light" for="Javascript">Javascript News</label><br>
 

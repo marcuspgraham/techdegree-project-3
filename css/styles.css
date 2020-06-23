@@ -199,18 +199,19 @@ opacity: 1;
 
 /* Transisition ------------ */
 
-input#name, 
-input#mail,
-input#tel,
-input#address,
-input#place,
-input#state,
-input#code,
-input#other {
+input#name:focus, 
+input#mail:focus,
+input#tel:focus,
+input#address:focus,
+input#place:focus,
+input#state:focus,
+input#code:focus,
+input#other:focus,
+#state:focus {
 opacity: 1;
 transition: opacity 1s ease-in-out;
--moz-transition: opacity 2s ease-in-out;
--webkit-transition: opacity 2s ease-in-out;
+-moz-transition: opacity 1s ease-in-out;
+-webkit-transition: opacity 1s ease-in-out;
 }
 
 input#name, 
@@ -219,7 +220,8 @@ input#tel,
 input#address,
 input#place,
 input#state,
-input#code {
+input#code,
+#state {
 opacity: 0.5;
 }
 
