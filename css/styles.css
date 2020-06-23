@@ -1,0 +1,216 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', sans-serif;
+	line-height: 1.5;
+	color: #363232;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    text-align: center;
+}
+
+label {
+    color: #7a8896;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+/* ---- Layout Containers ---- */
+
+.Top {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: rgb(45, 57, 69);
+    color: white;
+}
+
+.main {
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.Newsletter {
+    padding-bottom: 15px;
+}
+
+.form1 {
+    padding-top: 15px;
+}
+
+.Contact {
+    padding-top: 10px;
+}
+
+.checkboxes {
+    padding-bottom: 15px;
+}
+
+.radioboxes {
+    padding-bottom: 15px;
+}
+.radioboxes label {
+    margin-left: 5px;
+}
+
+
+/* ---- Page Elements ---- */
+
+.Newsletter > h2 {
+    text-align: center;
+}
+
+.Newsletter > p {
+    color: rgb(157, 163, 168);
+}
+
+
+.Copyright {
+    padding-top: 2em;
+    text-align: center;
+    color: rgb(157, 163, 168);
+}
+
+
+/* ---- Form Elements ---- */
+
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+input[type="number"],
+input[type="street"],
+input[type="city"],
+input[type="area"],
+input[type="state"],
+input[type="zip"],
+select,
+#other {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #eff0f1;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+input[type="zip"] {
+    display: block;
+    width: 40%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+
+.checkboxes label {
+    margin-left: 10px;
+}
+
+
+
+
+/* ---- Button ---- */
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4ebbb5;
+    font-size: 20px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #4ebbb5;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+  }
+
+
+/* UI element states pseudo-classes ------------ */
+
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+    color: rgb(157, 163, 168);
+    opacity: .5;
+}
+
+input[type="number"]::placeholder,
+input[type="zip"]::placeholder,
+input[type="city"]::placeholder,
+input[type="street"]::placeholder,
+input[type="phone"]::placeholder {
+    text-align: left;
+}
+
+input:focus, 
+select:focus,
+#other:focus {
+    border: 2px solid blue;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label{
+    font-weight: bold;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+   
+.main {
+    max-width: 800px;
+}    
+
+.form-group {
+display: flex;
+flex-direction: row;
+}
+
+.form-group label {
+flex: none;
+display: block;
+width: 150px;
+}
+
+label {
+    padding-top: 12px;
+}
+
+}
